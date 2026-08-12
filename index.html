@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text Presentation</title>
+
+    <title>Trishanth - CSE Student</title>
 
     <style>
         body {
@@ -26,6 +27,11 @@
             font-size: 36px;
         }
 
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
         main {
             width: 80%;
             max-width: 900px;
@@ -40,6 +46,12 @@
             color: #2c3e50;
             border-bottom: 2px solid #3498db;
             padding-bottom: 8px;
+            margin-top: 30px;
+        }
+
+        h3 {
+            color: #2c3e50;
+            margin-top: 0;
         }
 
         p {
@@ -54,9 +66,40 @@
 
         .highlight {
             background-color: #eaf6ff;
-            padding: 15px;
+            padding: 20px;
             border-left: 5px solid #3498db;
             margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .project {
+            background-color: #f8f9fa;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .project h3 {
+            font-size: 24px;
+        }
+
+        .project-button {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 12px 22px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .project-button:hover {
+            background-color: #217dbb;
+            transform: translateY(-2px);
         }
 
         footer {
@@ -66,18 +109,52 @@
             padding: 15px;
             margin-top: 30px;
         }
+
+        footer p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        /* Mobile Responsive Design */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            main {
+                width: 85%;
+                padding: 20px;
+            }
+
+            p,
+            ul {
+                font-size: 16px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            .project h3 {
+                font-size: 21px;
+            }
+        }
     </style>
 </head>
 
 <body>
 
+    <!-- Header -->
     <header>
         <h1>Myself Trishanth from IARE CSE</h1>
         <p>Welcome to my simple presentation website</p>
     </header>
 
+
+    <!-- Main Content -->
     <main>
 
+        <!-- Introduction -->
         <h2>Introduction</h2>
 
         <p>
@@ -86,11 +163,15 @@
             ideas, projects, or educational content.
         </p>
 
+
+        <!-- Highlight -->
         <div class="highlight">
             <strong>Important:</strong>
             This section can be used to highlight important information.
         </div>
 
+
+        <!-- About Topic -->
         <h2>About the Topic</h2>
 
         <p>
@@ -99,6 +180,8 @@
             to create attractive and easy-to-read websites.
         </p>
 
+
+        <!-- Key Points -->
         <h2>Key Points</h2>
 
         <ul>
@@ -108,6 +191,33 @@
             <li>The design can be customized according to your needs.</li>
         </ul>
 
+
+        <!-- My Projects -->
+        <h2>My Projects</h2>
+
+        <div class="project">
+
+            <h3>🎮 Tilebound Puzzle</h3>
+
+            <p>
+                Tilebound Puzzle is an interactive puzzle game where
+                players solve tile-based challenges using logic,
+                strategy, and problem-solving skills.
+            </p>
+
+            <a
+                href="https://off-road-challenge--trishanth2608.replit.app/tilebound-puzzle/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-button"
+            >
+                Play Tilebound Puzzle 🎮
+            </a>
+
+        </div>
+
+
+        <!-- Conclusion -->
         <h2>Conclusion</h2>
 
         <p>
@@ -119,8 +229,11 @@
         <p>
             Thank You for spending your valuable Time.
         </p>
+
     </main>
 
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2026 Presentation by Trishanth</p>
     </footer>
